@@ -36,11 +36,11 @@ export function Home() {
     return (
         <View style={styles.container}>
             <Text style={styles.eventName}>
-                Nome do Evento
+                Festa hoje
             </Text>
 
             <Text style={styles.eventDate}>
-                Sexta, 4 de Novembro de 2023.
+                {new Intl.DateTimeFormat('pt-BR', {weekday: 'long'}).format(new Date())} {new Intl.DateTimeFormat('pt-BR').format(new Date())}
             </Text>
 
             <View style={styles.form}>
